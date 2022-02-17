@@ -1,0 +1,353 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    height: 100vh;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia';
+    
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+@media (min-width: 576px) {
+      .container {
+        max-width: 540px; } 
+      }
+@media (min-width: 768px) {
+      .container {
+        max-width: 720px; } 
+      }
+@media (min-width: 992px) {
+      .container {
+        max-width: 960px; } 
+      }
+@media (min-width: 1200px) {
+      .container {
+        max-width: 1140px; } 
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.911);
+    box-shadow: 0 2px 13px black;
+}
+
+.navbar a {
+    color: white!important;
+}
+
+.sticky {
+    background: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+    transition: 0.25s all ease-in-out;
+    box-shadow: none;
+}
+
+.sticky a {
+    color: white!important;
+}
+
+.dropdown-item:hover {
+    background-color: #3C4226!important;
+}
+
+.home-1st {
+    background: linear-gradient(180deg, #3C4226, transparent);
+}
+
+.btn-olive {
+    background-color: #3C4226;
+}
+
+
+.img-width-fix {
+    max-width: 85%;
+}
+
+@media (min-width: 576px) {
+    .home-1st .img-width-fix {
+        max-width: 65%;
+    }
+}
+@media (min-width: 768px) {
+    .home-1st .img-width-fix {
+        max-width: 45%;
+    }
+}
+@media (min-width: 992px) {
+    .home-1st .img-width-fix {
+        max-width: 75%;
+    }
+}
+
+.title-with-bg {
+    padding: 15px 35px;
+    background: radial-gradient(#3c4226c7, rgba(0, 0, 0, 0.815) 150%);
+    border-radius: 10px 20px 10px 20px;
+}
+
+ /** caruselul **/
+.carousel {
+    position: relative;
+    height: 850px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    border: none!important;
+    transition: 0.15s all ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background:rgba(0,0,0, 0.4)!important;
+}
+
+.carousel-button {
+    width: 25px;
+    margin: 0 3px 0 3px;
+    height: 5px;
+    background: linear-gradient(to top, #3c4226, white);
+    border: 1px solid black!important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100!important;
+}
+
+.carousel-image-my {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+/** partea cu tipuri de ten **/
+.home-2nd{
+    background: linear-gradient(360deg, #615932, transparent);
+}
+
+/*footer*/
+
+footer {
+    margin-top: auto;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white
+}
+
+.footer-link:hover {
+    color:rgba(255,255,255,0.8);
+}
+
+.footer-bg {
+    background: linear-gradient(to bottom, #3c4226, black);
+}
+
+.input-box-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 350px;
+}
+
+.input-footer {
+    flex-grow: 5;
+}
+
+.form-control-my {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: rgb(221, 221, 221);
+    background-color: rgb(78, 78, 78);
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+  }
+  
+  .submit-my {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(236, 236, 236);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: rgb(65, 64, 64);
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+  }
+
+  /** produse **/
+  .jumbotron{
+      color:white;
+      background-color: #3C4226;
+  }
+
+  .breadcrumb{
+    color:#C4C6C3;
+    background-color: #3C4226;
+  }
+
+  .breadcrumb-item a {
+      color: white;
+  }
+
+  .breadcrumb-item a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+  .breadcrumb-item:last-child {
+    color: #f1f1f1;
+}
+
+/* checkout form */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container_form {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px){
+    .container_form {
+      width: 75%!important;
+    }
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  .btn {
+    background-color: #3C4226;
+    color: white;
+    padding: 12px;
+    margin: 10px 0 0 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #3C4226;
+  }
+
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+
+  .badge-olive {
+    background-color: #C0B4A8;
+  }
+
+  .sfaturi .img-width-fix {
+    max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .sfaturi .img-width-fix {
+    max-width: 65%;
+}
+  .first-advice-image {
+    margin-left: 45px;
+  }
+}
+
+.bg-dotted {
+  background: -moz-radial-gradient(#3c422652 15%, transparent 16%), -moz-radial-gradient(#3C422652 15%, transparent 16%), #f7fcfe;
+  background: -webkit-radial-gradient(#3C422652 15%, transparent 16%), -webkit-radial-gradient(#3C422652 15%, transparent 16%), #fafafa;
+  background-position: 0 0, 5px 5px;
+  -webkit-background-size: 10px 10px;
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+}
